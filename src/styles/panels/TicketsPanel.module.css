@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #19162F;
+    border-radius: 10px;
+    padding: 22px;
+
+    margin-bottom: 20px;
+
+    position: relative;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1.7px;
+    /* the border thickness */
+    border-radius: 10px;
+    background: linear-gradient(to right, #c2c2c233, #c2c2c2b4);
+    mask:
+        linear-gradient(#000 0 0) exclude,
+        linear-gradient(#000 0 0) content-box;
+
+    pointer-events: none;
+}
+
+
+
+.button {
+    border: none;
+    border-radius: 10px;
+    width: 103px;
+    height: 26px;
+    color: white;
+    background-color: gray
+}

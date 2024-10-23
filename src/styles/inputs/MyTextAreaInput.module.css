@@ -1,0 +1,50 @@
+.input_container textarea {
+    background: none;
+    font-weight: 300;
+    padding: 10px;
+    color: #D4D4D4;
+    outline: none;
+    border: none !important;
+    width: calc(100% - 20px);
+
+    font-family: var(--font-unbounded);
+    font-size: 12px;
+}
+
+.input_container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1.7px;
+    /* the border thickness */
+    border-radius: 14px;
+    background: linear-gradient(to right, #c2c2c233, #c2c2c2b4);
+    mask:
+      linear-gradient(#000 0 0) exclude,
+      linear-gradient(#000 0 0) content-box;
+      pointer-events: none;
+  }
+
+.input_container {
+    position: relative;
+    width: 100%;
+}
+
+.input_container textarea::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgb(18, 19, 23);
+}
+
+.input_container textarea::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgb(86, 87, 95);
+}
+
+
+.label {
+    position: absolute;
+    left: 20px;
+    top: -5px;
+    color: #D4D4D4;
+    font-size: 0.5rem;
+}

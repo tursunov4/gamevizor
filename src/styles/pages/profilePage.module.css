@@ -1,0 +1,234 @@
+.background {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 150px;
+    padding-right: 150px;
+
+    color: var(--color-white);
+    font-family: var(--font-unbounded);
+    font-size: var(--font-size-xs);
+
+    max-width: 1600px;
+}
+
+.base_path {
+    font-weight: 300;
+    color: var(--color-gray-1100);
+    font-family: "Unbounded_Light_Base";
+}
+
+.main_panel {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+
+    gap: 45px
+}
+
+.button {
+    text-transform: uppercase;
+    width: calc(250px - 40px);
+    text-align: center;
+    border-radius: 16px;
+    background-color: var(--color-deeppink);
+    font-weight: 500;
+    padding: 15px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #FF2990;
+}
+
+.menu {
+    background-color: var(--color-gray-600);
+    backdrop-filter: blur(88px);
+    border-radius: 20px;
+    box-shadow: 0px 4px 42px rgba(51, 71, 91, 0.7) inset,
+        0px 4px 21px rgba(0, 0, 0, 0.17);
+    height: calc(613px - 60px);
+    width: calc(281px - 60px);
+
+    padding: 30px;
+
+    gap: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.icon {
+    width: 15px;
+}
+
+.panel {
+    font-size: var(--font-size-sm);
+    width: 100%;
+    padding: 12px;
+
+    border-radius: 12px;
+
+    display: flex;
+    gap: 10px;
+}
+
+.general {
+    display: flex;
+    flex-direction: column;
+
+    gap: 50px;
+}
+
+.line {
+    height: 2px;
+    width: 100%;
+
+    background: linear-gradient(to right, #c2c2c202, #C2C2C2);
+}
+
+.title {
+    font-size: var(--font-size-sm);
+    display: flex;
+    flex-direction: row;
+    text-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile_info {
+    display: flex;
+    flex-direction: row;
+    color: var(--color-gray-1000);
+    font-size: var(--font-size-3xs);
+
+    gap: 30px;
+}
+
+.profile_icon {
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.base_input {
+    background: none;
+    font-weight: 300;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--color-silver);
+    box-sizing: border-box;
+    width: 100%;
+    color: white;
+    outline: none
+}
+
+.input_box {
+    /* родительский блок относительно которого будем формировать положение
+    тега label */
+    position: relative;
+}
+
+.input_box input,
+select {
+    background: none;
+    font-weight: 300;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--color-silver);
+    ;
+    box-sizing: border-box;
+    width: 100%;
+    color: white;
+    outline: none;
+    appearance: none;
+}
+
+.input_box label {
+    position: absolute;
+    /* смещение относительно родительского элемента 10px вверх от верхнего края и   10px влево */
+    top: -5px;
+    left: 10px;
+    padding: 0 5px;
+
+    background: linear-gradient(rgba(212, 212, 212, 0.3), rgba(212, 212, 212, 0.3)), #d4d4d4;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: var(--font-size-5xs);
+}
+
+
+.select_console option {
+    color: white;
+    background-color: #19212d;
+}
+
+
+.ellipce_1 {
+    width: 1163px;
+    height: 1163px;
+
+    background-color: rgba(132, 40, 255, 0.05);
+    border-radius: 50%;
+    filter: blur(40px);
+    position: absolute;
+
+    left: -25%;
+    top: -50%;
+
+    pointer-events: none;
+}
+
+.ellipce_2 {
+    width: 865px;
+    height: 865px;
+
+    background-color: rgba(129, 1, 140, 0.05);
+    border-radius: 50%;
+    filter: blur(40px);
+    position: absolute;
+
+    left: 45%;
+    top: -30%;
+
+    pointer-events: none;
+}
+
+.ellipce_3 {
+    width: 1163px;
+    height: 865px;
+
+    background-color: rgba(82, 40, 225, 0.05);
+    border-radius: 50%;
+    filter: blur(40px);
+    position: absolute;
+
+    left: 0%;
+    top: 30%;
+
+    pointer-events: none;
+}
+
+.icon_background {
+    opacity: 0.2;
+    mix-blend-mode: luminosity;
+    position: absolute;
+
+    pointer-events: none;
+    z-index: -1;
+}

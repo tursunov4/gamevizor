@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/gamevizor.svg?v=2" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><!--title-html--></title>
+  <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+  <!--meta-head-->
+  <!--app-head-->
+</head>
+
+<body style="background-color: black;">
+  <div id="root"><!--app-html--></div>
+  <script type="module" src="/src/entry-client.tsx"></script>
+  <script id="app-data" type="application/json"><!--data-html--></script>
+
+  <!-- Top.Mail.Ru counter -->
+  <script type="text/javascript">
+    var _tmr = window._tmr || (window._tmr = []);
+    _tmr.push({ id: "3560201", type: "pageView", start: (new Date()).getTime() });
+    (function (d, w, id) {
+      if (d.getElementById(id)) return;
+      var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+      ts.src = "https://top-fwz1.mail.ru/js/code.js";
+      var f = function () { var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s); };
+      if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+    })(document, window, "tmr-code");
+  </script>
+  <noscript>
+    <div><img src="https://top-fwz1.mail.ru/counter?id=3560201;js=na" style="position:absolute;left:-9999px;"
+        alt="Top.Mail.Ru" /></div>
+  </noscript>
+  <!-- /Top.Mail.Ru counter -->
+
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date();
+      for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(98470255, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/98470255" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+
+  <script>
+    const titles = {
+      "/rules": "GAMEVIZOR | Правила сайта",
+      "/confidential": "GAMEVIZOR | Политика конфиденциальности",
+      "/offer": "GAMEVIZOR | Публичная оферта",
+
+      "/order/create": "GAMEVIZOR | Создание заказа",
+
+      "/catalog": "GAMEVIZOR | Каталог игр",
+      "/subscriptions": "GAMEVIZOR | Каталог подписок",
+      "/wallet": "GAMEVIZOR | Пополнение кошелька",
+
+      "/profile": "GAMEVIZOR | Личный кабинет",
+      "/profile/orders": "GAMEVIZOR | Мои заказы",
+      "/profile/subscriptions": "GAMEVIZOR | Мои подписки",
+      "/profile/offers": "GAMEVIZOR | Мои промокоды и бонусы",
+      "/profile/chats": "GAMEVIZOR | Мои чаты",
+      "/profile/supports": "GAMEVIZOR | Поддержка",
+
+      "/admin": "GAMEVIZOR | Админка",
+      "/admin/products": "GAMEVIZOR | Админка - Продукты",
+      "/admin/orders": "GAMEVIZOR | Админка - Заказы",
+      "/admin/chats": "GAMEVIZOR | Админка - Чаты",
+      "/admin/stats": "GAMEVIZOR | Админка - Статистика",
+      "/admin/team": "GAMEVIZOR | Админка - Команда",
+      "/admin/clients": "GAMEVIZOR | Админка - Клиенты",
+      "/admin/feedbacks": "GAMEVIZOR | Админка - Отзывы",
+      "/admin/offers": "GAMEVIZOR | Админка - Предложения",
+      "/admin/wallet": "GAMEVIZOR | Админка - Правила кошелька",
+    };
+
+    // Получаем текущий путь
+
+    // Меняем заголовок страницы
+
+    function updateTitle() {
+      const currentPath = window.location.pathname;
+      var title = "GAMEVIZOR – играй без ограничений."
+      // Ищем совпадение в объекте titles
+      for (var i in titles) {
+        if (currentPath.startsWith(i)) {
+          title = titles[i]
+        }
+      }
+
+      document.title = title;
+    }
+
+    // Вызываем функцию при загрузке страницы
+    updateTitle();
+
+    window.addEventListener('popstate', updateTitle); // Для навигации "назад" и "вперед"
+    window.addEventListener('click', (event) => {
+      if (event.target.tagName === 'A') {
+        updateTitle();
+      }
+    })
+  </script>
+</body>
+
+</html>

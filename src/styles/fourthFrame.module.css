@@ -1,0 +1,110 @@
+.background {
+    margin-top: 20px;
+    display: flex;
+    padding-left: 150px;
+    padding-right: 150px;
+
+    font-size: var(--font-size-base);
+    color: var(--color-white);
+    font-family: var(--font-unbounded);
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: var(--font-size-13xl);
+}
+
+.line {
+    background: linear-gradient(#C2C2C2, #C2C2C2);
+    height: 2px;
+    width: 200px; 
+    opacity: 0.5;
+    align-self: center;
+}
+
+.animate_line_1 {
+    composes: line;
+    background: linear-gradient(to right,#E745F5, #61C3FF);
+    animation: lineFill 4s linear forwards;
+}
+
+.animate_line_2 {
+    composes: line;
+    background: linear-gradient(to right,#61C3FF, #965EEB);
+    animation: lineFill 4s linear forwards;
+}
+
+.animate_line_3 {
+    composes: line;
+    background: linear-gradient(to right,#965EEB, #34977E);
+    animation: lineFill 4s linear forwards;
+}
+
+@keyframes lineFill {
+    from {
+      width: 0;  /* Начальная ширина: 0 */
+    }
+    to {
+      width: 200px; /* Конечная ширина: 200px */
+    }
+  }
+
+.stage { 
+    display: flex;
+    flex-direction: column;
+    gap: 30px;  
+}
+
+.stage_title_row {
+    display: flex;
+    gap: 30px;
+}
+
+.stage_description_1 {
+    font-size: var(--font-size-xl);
+    color: var(--color-silver-100);
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-silver-200);
+    font-family: "Unbounded_Bold";
+}
+
+.stage_description_2 {
+    font-size: var(--font-size-smi);
+    max-width: 291px;
+}
+
+
+.mobile_line {
+    background: linear-gradient(#c2c2c22f, #C2C2C2);
+    width: 2px;
+    height: 94px; 
+    opacity: 0.5;
+    align-self: center;
+}
+
+.mobile_animate_line_1 {
+    composes: mobile_line;
+    background: linear-gradient(to right,#E745F5, #61C3FF);
+    animation: MobilelineFill 4s linear forwards;
+}
+
+.mobile_animate_line_2 {
+    composes: mobile_line;
+    background: linear-gradient(to right,#61C3FF, #965EEB);
+    animation: MobilelineFill 4s linear forwards;
+}
+
+.mobile_animate_line_3 {
+    composes: mobile_line;
+    background: linear-gradient(to right,#965EEB, #34977E);
+    animation: MobilelineFill 4s linear forwards;
+}
+
+@keyframes MobilelineFill {
+    from {
+        height: 0;  /* Начальная ширина: 0 */
+    }
+    to {
+        height: 94px; /* Конечная ширина: 200px */
+    }
+  }

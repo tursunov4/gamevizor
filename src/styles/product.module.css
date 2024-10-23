@@ -1,0 +1,106 @@
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 1s ease;
+    transform: scale(1);
+}
+
+.container:hover {
+  transform: scale(1.05);
+}
+
+@media (hover: none) {
+  container:hover { transform: scale(1); }
+}
+
+.container_show {
+  composes: container;
+  opacity: 1;
+}
+
+.image {
+    border-radius: 30px;
+    pointer-events: none;
+
+    width: 291px;
+    height: 291px;
+}
+
+.cost {
+    font-weight: 500;
+    font-size: var(--font-size-lg);
+    font-family: "Unbounded_Medium";
+}
+
+.title {
+    font-weight: 300;
+    text-align: center;
+}
+
+.for_play {
+    position: absolute;
+    border-radius: 10px;
+    background-color: var(--color-gray-300);
+    text-transform: uppercase;
+    font-size: var(--font-size-3xs);
+    padding: 5px;
+    left: 35px;
+    top: 250px;
+    z-index: 1;
+}
+
+.event {
+    position: absolute;
+    text-transform: uppercase;
+    background-color: var(--color-deeppink);
+    border-radius: 10px;
+    font-size: var(--font-size-3xs);
+    padding: 5px;
+    left: 220px;
+    top: 20px;
+    z-index: 1;
+
+    text-wrap: nowrap;
+}
+
+.imageContainer {
+    position: relative; /* To position buttons inside */
+  }
+  
+  .image {
+    /* ... image styles ... */
+    transition: filter 0.3s ease; /* Smooth opacity transition */
+  }
+  
+  .buttonContainer {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .button {
+    width: fit-content;
+    padding: 10px;
+    border: none;
+    background: none;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid gray;
+    text-decoration: none;
+    font-size: 0.8rem;
+  }
+
+  .button:hover {
+    background-color: rgb(87, 87, 94);
+  }

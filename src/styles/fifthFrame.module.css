@@ -1,0 +1,17 @@
+.background {
+    margin-top: 100px;
+    display: flex;
+    padding-left: 150px;
+    padding-right: 150px;
+
+    font-size: var(--font-size-base);
+    color: var(--color-white);
+    font-family: var(--font-unbounded);
+
+    margin-bottom: 100px;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: var(--font-size-13xl);
+}

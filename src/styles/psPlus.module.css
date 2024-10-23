@@ -1,0 +1,120 @@
+
+
+.background_1 {
+    background-image: url("/images/backgrounds/base_sub_texture.png"),
+    linear-gradient(to bottom left, #EEEEEE, #D7D7D7);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    width: calc(267px - 40px);
+    height: calc(440px - 40px);
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    gap: 20px;
+
+    font-family: var(--font-unbounded);
+}
+
+.background_2 {
+    background-image: url("/images/backgrounds/base_sub_texture.png"),
+    linear-gradient(to bottom left, #FFEB39, #FF9F10);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    width: calc(267px - 40px);
+    height: calc(440px - 40px);
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    gap: 20px;
+
+    font-family: var(--font-unbounded);
+}
+
+.background_3 {
+    background-image: url("/images/backgrounds/dark_sub_texture.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    width: calc(267px - 40px);
+    height: calc(440px - 40px);
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    gap: 20px;
+
+    font-family: var(--font-unbounded);
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 28px;
+    color: var(--color-gray-200);
+}
+
+.duration {
+    font-size: var(--font-size-xs);
+    color: #212229;
+}
+
+.cost {
+    font-size: var(--font-size-xl);
+}
+
+.btn_buy_yellow {
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: #ffbb10;
+    padding: 15px 0;
+    width: 210px;
+    text-align: center;
+    align-self: center;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 1s ease;
+}
+
+.btn_buy_yellow:hover {
+    background-color: #FFEB39;
+    transform: scale(1.05);
+}
+
+.btn_buy_dark {
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: #232323;
+    color: #ffbb10;
+    padding: 15px 0;
+    width: 210px;
+    text-align: center;
+    align-self: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 1s ease;
+}
+
+.btn_buy_dark:hover {
+    background-color: #111111;
+    transform: scale(1.05);
+}

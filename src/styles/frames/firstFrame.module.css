@@ -1,0 +1,355 @@
+.background {
+  background-image: url("../../assets/spider_man.png");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-unbounded);
+  gap: 15px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  margin-top: 35px;
+
+  position: relative;
+  background-position: 0% 50%;
+}
+
+.background_active {
+  composes: background;
+  background-position: 0% 0%;
+  transition: background-position 1s ease;
+}
+
+.background_mobile {
+  composes: background;
+  padding-left: 0;
+  padding-top: 0;
+  margin-top: 0;
+  background-size: 100%;
+  background-position: -80px 150px;
+}
+
+.background_mobile_active {
+  composes: background_mobile;
+  background-position: -80px 100px;
+  transition: background-position 1s ease;
+}
+
+.icon_background {
+  opacity: 0.2;
+  mix-blend-mode: luminosity;
+  position: absolute;
+
+  pointer-events: none;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: var(--font-size-25xl);
+  transform: scale(0.1);
+}
+
+.title_active {
+  composes: title;
+  transform: scale(1);
+  transition: transform 1s ease;
+}
+
+.description {
+  font-size: var(--font-size-base);
+  color: var(--color-gray-700);
+  text-align: center;
+  max-width: 526px;
+  opacity: 0;
+}
+
+.description_active {
+  composes: description;
+  opacity: 1;
+  transition: opacity 2s ease;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.box_completed_tasks {
+  height: calc(358px - 60px);
+  width: calc(396px - 60px);
+  background-color: rgba(48, 39, 53, 35%);
+  backdrop-filter: blur(88px);
+  border-radius: 20px;
+  box-shadow: 0 4px 42px rgba(51, 71, 91, 0.7) inset,
+    0 4px 21px rgba(0, 0, 0, 0.17);
+
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.box_completed_tasks:hover {
+  cursor: pointer;
+}
+
+.box_top {
+  display: flex;
+  flex-direction: row;
+}
+
+.box_arrow {
+  text-align: end;
+  flex: 1;
+}
+
+.box_bottom {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.box_number_completed_task {
+  font-size: var(--font-size-25xl);
+  text-transform: uppercase;
+  color: var(--color-deeppink);
+  white-space: pre-wrap;
+}
+
+.box_bottom_description {
+  text-transform: uppercase;
+}
+
+.box_description {
+  font-size: var(--font-size-sm);
+  flex: 4;
+}
+
+.box_number_clients {
+  height: calc(213px - 40px);
+  width: calc(186px - 40px);
+  background-color: rgba(48, 39, 53, 35%);
+  backdrop-filter: blur(88px);
+  border-radius: 20px;
+  box-shadow: 0 4px 42px rgba(51, 71, 91, 0.7) inset,
+    0 4px 21px rgba(0, 0, 0, 0.17);
+
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.box_up {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box_number_clients_value {
+  color: var(--color-gray-700);
+  font-size: var(--font-size-sm);
+}
+
+.box_bottom_2 {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.box_description_1 {
+  font-size: var(--font-size-sm);
+}
+
+.box_description_2 {
+  text-transform: uppercase;
+  font-size: var(--font-size-xl);
+}
+
+.box_age_work {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: calc(186px);
+  width: calc(229px);
+  background-color: rgba(48, 39, 53, 35%);
+  backdrop-filter: blur(30px);
+  border-radius: 20px;
+  box-shadow: 0 4px 42px rgba(51, 71, 91, 0.7) inset,
+    0 4px 21px rgba(0, 0, 0, 0.17);
+  background-image: url("../../../public/icons/backgrounds/award.svg");
+  background-repeat: no-repeat;
+  background-position-x: calc(50% + 60px);
+  background-position-y: center;
+}
+
+.box_bottom_3 {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.box_text_2022 {
+  font-size: var(--font-size-25xl);
+  align-self: self-end;
+  display: flex;
+}
+
+.box_age_top {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.box_icons {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  transition: transform 1s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.feedbacks {
+  height: 406px;
+  overflow-y: scroll;
+  padding-right: 20px;
+}
+
+.feedbacks::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgb(18, 19, 23);
+}
+
+.feedbacks::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(86, 87, 95);
+}
+
+.ellipse {
+  width: 293px;
+  height: 519px;
+  background-color: rgba(157, 205, 250, 0.1);
+  border-radius: 50%;
+  filter: blur(40px);
+  position: absolute;
+  z-index: 2;
+  left: 60%;
+  top: 40%;
+  pointer-events: none;
+}
+
+.circle {
+  width: 239px;
+  height: 239px;
+  background-color: rgba(157, 205, 250, 0.1);
+  border-radius: 50%;
+  filter: blur(40px);
+  position: absolute;
+
+  left: 30%;
+  top: 50%;
+  pointer-events: none;
+}
+
+.rect {
+  width: 318px;
+  height: 199px;
+
+  background-color: rgba(97, 195, 255, 0.1);
+  border-radius: 50%;
+  filter: blur(40px);
+  position: absolute;
+
+  left: 5%;
+  top: 25%;
+  pointer-events: none;
+}
+
+.circle_2 {
+  width: 865px;
+  height: 865px;
+  background-color: rgba(129, 1, 140, 0.1);
+  border-radius: 50%;
+  filter: blur(50px);
+  position: absolute;
+
+  left: 47%;
+  top: -18%;
+  overflow-x: hidden;
+  pointer-events: none;
+}
+
+.circle_3 {
+  width: 1163px;
+  height: 1163px;
+  background-color: rgba(82, 40, 225, 0.1);
+  border-radius: 50%;
+  filter: blur(50px);
+  position: absolute;
+  left: -10%;
+  top: 50%;
+  overflow-x: hidden;
+  pointer-events: none;
+}
+
+.button {
+  text-transform: uppercase;
+  width: calc(186px);
+  text-align: center;
+  border-radius: 12px;
+  background-color: #ff007a;
+  font-size: 0.7rem;
+  padding: 18px;
+
+  color: white;
+  align-self: center;
+
+  outline: none;
+  border: none;
+
+  cursor: pointer;
+
+  text-decoration: none;
+
+  z-index: 0;
+}
+
+.button_anim {
+  composes: button;
+  opacity: 0;
+}
+
+.button_anim_active {
+  composes: button_anim;
+  opacity: 1;
+  transition: opacity 2s ease;
+}
+
+.button:hover {
+  background-color: #fc3c99;
+}
+@media only screen and (max-width: 700px) {
+  .box_age_work {
+    background-position-x: calc(50% + 30px);
+    background-position-y: left;
+    background-size: 76.3px 123px;
+  }
+}

@@ -1,0 +1,41 @@
+.input_container {
+    position: relative;
+}
+
+.label {
+    position: absolute;
+    left: 20px;
+    top: -5px;
+    color: #D4D4D4;
+    font-size: 0.5rem;
+}
+
+.phone_input {
+    background: none !important;
+    font-weight: 300 !important;
+    border: none !important;
+    color: #D4D4D4 !important;
+    outline: none !important;
+    width: 100% !important;
+    position: relative !important;
+}
+.flag_dropdown {
+    left: 5px;
+}
+
+.inputPhone_container {
+    top: 10%;
+}
+
+.input_container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1.7px;
+    /* the border thickness */
+    border-radius: 10px;
+    background: linear-gradient(to right, #c2c2c233, #c2c2c2b4);
+    mask:
+      linear-gradient(#000 0 0) exclude,
+      linear-gradient(#000 0 0) content-box;
+  }

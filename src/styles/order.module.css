@@ -1,0 +1,79 @@
+.container_pay {
+    display: flex;
+
+    flex-direction: column;
+
+    height: calc(331px - 50px);
+
+    max-width: calc(397px - 50px);
+
+    width: 100%;
+
+    background-color: rgba(48, 39, 53, 35%);
+    border-radius: 24px;
+    backdrop-filter: blur(88px);
+    box-shadow: 0 4px 42px rgba(51, 71, 91, 0.7) inset,
+        0 4px 21px rgba(0, 0, 0, 0.17);
+
+    background-image: url("/images/backgrounds/background_pay_frame.png");
+
+    padding: 25px;
+
+    gap: 15px;
+}
+
+
+.button {
+    text-transform: uppercase;
+    width: calc(339px);
+    text-align: center;
+    border-radius: 12px;
+    background-color: var(--color-deeppink);
+    font-weight: 500;
+    padding: 12px;
+
+    color: white;
+    align-self: center;
+    margin-top: 10px;
+
+    outline: none;
+    border: none;
+}
+
+.button:hover {
+    background-color: #FF2990;
+}
+
+.button_disable {
+    composes: button;
+    background-color: #A5A3A9;
+}
+
+.button_disable:hover {
+    background-color: #A5A3A9;
+}
+
+.container_pay_icons {
+    max-width: calc(397px - 50px);
+
+    width: 100%;
+
+    background-image: url("/images/backgrounds/background_pay_icon.png");
+
+    padding: 25px;
+
+    background-color: rgba(48, 39, 53, 35%);
+    border-radius: 24px;
+    backdrop-filter: blur(88px);
+    box-shadow: 0 4px 42px rgba(51, 71, 91, 0.7) inset,
+        0 4px 21px rgba(0, 0, 0, 0.17);
+
+    flex-grow: 1;
+
+    display: flex;
+    gap: 20px;
+}
+
+.icon_bank {
+    filter: grayscale(1) invert(30%) sepia(10%) saturate(1121%) hue-rotate(208deg) brightness(93%) contrast(84%)
+}

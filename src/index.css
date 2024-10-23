@@ -1,0 +1,233 @@
+@font-face {
+  font-family: "TT Norms";
+  src: url("/fonts/TTNorms-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "TT Norms";
+  src: url("/fonts/TTNorms-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Unbounded";
+  src: url("/fonts/Unbounded-VariableFont_wght.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Unbounded_Extra_Bold";
+  src: url("/fonts/Unbounded-ExtraBold.ttf");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Unbounded_Bold";
+  src: url("/fonts/Unbounded-Bold.ttf");
+  font-weight: 900;
+}
+
+
+@font-face {
+  font-family: "Unbounded_Medium";
+  src: url("/fonts/Unbounded-Medium.ttf");
+  font-weight: 400;
+}
+
+
+@font-face {
+  font-family: "Unbounded_Light";
+  src: url("/fonts/Unbounded-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "Unbounded_Light_Base";
+  src: url("/fonts/Unbounded-Light.ttf");
+}
+
+
+@font-face {
+  font-family: "TT Norms";
+  src: url("/fonts/TTNorms-ExtraBold.ttf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("/fonts/Bebas Neue Cyrillic.ttf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("/fonts/BebasNeue-Regular.ttf");
+  font-weight: 400;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background: linear-gradient(134.63deg, #19212D, #0C031E);
+
+  background-attachment: fixed;
+
+  min-height: 100vh;
+}
+
+
+:root {
+  --padding-xl: 20px;
+  --font-tt-norms: "TT Norms";
+  --font-unbounded: "Unbounded";
+  --font-bebas-neue: "Bebas Neue";
+
+  --color-lime: #24ff00;
+  --color-deepskyblue-100: #61c3ff;
+
+  --color-white: #fff;
+  --color-lightgray-100: #d4d4d4;
+  --color-silver-100: #c2c2c2;
+  --color-silver-200: rgba(194, 194, 194, 0.11);
+  --color-lightgray-200: rgba(212, 212, 212, 0.3);
+  --color-deeppink: #ff007a;
+  --color-deeppink-100: #ff007a;
+  --color-gray-200: #212229;
+  --color-gray-300: #120f25;
+  --color-gray-600: rgba(48, 39, 53, 0.35);
+  --color-gray-700: rgba(255, 255, 255, 0.8);
+  --color-gray-1000: rgba(255, 255, 255, 0.6);
+  --color-gray-1100: rgba(255, 255, 255, 0.5);
+  --color-silver: rgba(194, 194, 194, 0.11);
+
+
+  --font-size-3xs: 0.625rem;
+  --font-size-lg: 1.125rem;
+  --font-size-base: 1rem;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-5xs: 0.5rem;
+  --font-size-13xl: 2rem;
+  --font-size-21xl: 2.5rem;
+  --font-size-smi: 0.813rem;
+  --font-size-lgi: 1.188rem;
+  --font-size-xl: 1.25rem;
+  --font-size-9xl: 1.75rem;
+  --font-size-11xl: 1.875rem;
+  --font-size-25xl: 2.75rem;
+
+  --width-for-mobile: 960px;
+}
+
+@-moz-document url-prefix() {
+  :root {
+    scrollbar-color: rgb(86, 87, 95) rgb(18, 19, 23) !important;
+    scrollbar-width: 10px !important;
+  }
+}
+
+.select__control {
+  min-height: auto !important;
+  margin-top: -5px;
+}
+
+.select__menu {
+  margin-top: 10px;
+  background-color: rgba(42, 39, 68, 100%);
+  border: 1px solid var(--color-gray-300);
+  width: 100% !important;
+  margin-left: -8px;
+}
+
+.select__option:hover {
+  background-color: var(--color-gray-300);
+}
+
+.select__option {
+  padding: 5px;
+}
+
+.select__menu-list::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgb(18, 19, 23);
+}
+
+.select__menu-list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(86, 87, 95);
+}
+
+
+.my_select__control {
+  min-height: auto !important;
+  margin-top: -5px;
+  cursor: pointer !important;
+
+  font-family: "Unbounded_Medium";
+}
+
+.my_select__menu {
+  margin-top: 10px;
+  background-color: rgba(42, 39, 68, 100%);
+  border: 1px solid var(--color-gray-300);
+  width: 100% !important;
+  margin-left: -12px;
+  z-index: 2 !important;
+}
+
+.my_select__control--is-disabled {
+  cursor: not-allowed !important;
+}
+
+.my_select__option:hover {
+  background-color: var(--color-gray-300);
+}
+
+.my_select__option {
+  padding: 5px;
+  cursor: pointer !important;
+
+  font-family: "Unbounded_Medium";
+}
+
+.my_select__menu-list::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgb(18, 19, 23);
+}
+
+.my_select__menu-list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(86, 87, 95);
+}
+
+.selected-flag:hover,
+.selected-flag:focus {
+  background-color: transparent !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgb(18, 19, 23);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(86, 87, 95);
+}
+
+
+:root::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgb(18, 19, 23);
+}
+
+:root::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(86, 87, 95);
+}

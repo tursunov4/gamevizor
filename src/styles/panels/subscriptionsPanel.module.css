@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #19162F;
+    backdrop-filter: blur(88px);
+    border-radius: 20px;
+    border: 10px solid;
+    border-image: url("/icons/backgrounds/input.svg") 10;
+    box-sizing: border-box;
+    padding: 20px;
+
+    margin-bottom: 20px;
+
+    
+}
+
+.button {
+    border: none;
+    border-radius: 10px;
+    width: 103px;
+    height: 26px;
+    color: white;
+    background-color: gray
+}

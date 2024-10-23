@@ -1,0 +1,85 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    color: var(--color-white);
+    font-family: var(--font-unbounded);
+
+    font-size: var(--font-size-xs);
+
+    max-width: 1600px;
+
+    padding-left: 150px;
+    padding-right: 150px;
+
+    margin-top: 55px;
+
+    position: relative;
+
+    height: 100%;
+    margin-bottom: 150px;
+
+
+}
+
+.flag_button {
+    background: none;
+    outline: none;
+    border: none;
+    color: red;
+}
+
+.ellipce_1 {
+    width: 1163px;
+    height: 1163px;
+
+    background-color: rgba(132, 40, 255, 0.05);
+    border-radius: 50%;
+    filter: blur(40px);
+    position: absolute;
+
+    left: -25%;
+    top: -50%;
+
+    pointer-events: none;
+}
+
+.ellipce_2 {
+    width: 865px;
+    height: 865px;
+
+    background-color: rgba(129, 1, 140, 0.05);
+    border-radius: 50%;
+    filter: blur(40px);
+    position: absolute;
+
+    left: 40%;
+    top: -30%;
+
+    pointer-events: none;
+}
+
+.ellipce_3 {
+    width: 1163px;
+    height: 865px;
+
+    background-color: rgba(82, 40, 225, 0.05);
+    border-radius: 50%;
+    filter: blur(40px);
+    position: absolute;
+
+    left: 0%;
+    top: 30%;
+
+    pointer-events: none;
+}
+
+.icon_background {
+    opacity: 0.2;
+    z-index: -1;
+    mix-blend-mode: luminosity;
+    position: absolute;
+
+    pointer-events: none;
+}

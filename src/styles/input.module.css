@@ -1,0 +1,104 @@
+.input_container input {
+  background: none;
+  font-weight: 300;
+  padding: 5px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border: none;
+  color: #D4D4D4;
+  outline: none;
+  width: calc(100% - 24px);
+
+  font-family: "Unbounded_Light_Base" !important;
+  font-size: 12px;
+  z-index: 0;
+
+  position: relative;
+  border-radius: 10px;
+
+  min-height: 29px;
+}
+
+.input_container input::placeholder {
+  color: rgba(212, 212, 212, 0.4);
+}
+.input {
+  display: inline-block;
+  position: relative;
+}
+
+.suffix {
+  position: absolute;
+  left: 80%;
+  top: 30%;
+  color: #ffffff;
+  font: inherit;
+}
+
+
+.input_container {
+  display: inline-block;
+  position: relative;
+
+  width: 100%;
+}
+
+.label {
+  position: absolute;
+  left: 20px;
+  top: -6px;
+  color: #D4D4D4;
+  font-size: 0.5rem;
+  background-color: #21143d;
+  padding: 2px;
+  z-index: 1;
+  font-family: "Unbounded_Light_Base";
+}
+
+
+.input_container input[type="number"]::-webkit-outer-spin-button,
+.input_container input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.input_container input[type='number'],
+.input_container input[type="number"]:hover,
+.input_container input[type="number"]:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+
+.input_container input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+.input_container input[type="date"]::-webkit-datetime-edit-text,
+.input_container input[type="date"]::-webkit-datetime-edit-month-field,
+.input_container input[type="date"]::-webkit-datetime-edit-day-field,
+.input_container input[type="date"]::-webkit-datetime-edit-year-field {
+  color: #C2C2C2;
+}
+
+.input_container input[type="date"] {
+  color-scheme: dark;
+}
+
+.input_container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1.7px;
+
+  pointer-events: none;
+
+  z-index: 1;
+  /* the border thickness */
+  border-radius: 10px;
+  background: linear-gradient(to right, #c2c2c233, #c2c2c2b4);
+  mask:
+    linear-gradient(#000 0 0) exclude,
+    linear-gradient(#000 0 0) content-box;
+}

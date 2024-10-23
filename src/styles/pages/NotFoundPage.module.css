@@ -1,0 +1,95 @@
+
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-image: url("../../assets/Background404.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+    margin-top: 80px;
+    margin-bottom: 150px;
+
+    color: var(--color-white);
+    font-family: var(--font-unbounded);
+
+    font-size: var(--font-size-xs);
+
+    max-width: 1600px;
+
+    padding-left: 180px;
+    padding-right: 180px;
+
+    display: flex;
+
+    position: relative;
+}
+
+.base_path {
+    font-weight: 300;
+    color: var(--color-gray-1100);
+    font-family: "Unbounded_Light_Base";
+}
+
+.errorContainer {
+    height: 581px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.errorCode {
+    font-size: 22rem;
+    font-weight: bold;
+
+    margin-top: auto;
+}
+
+.errorTitle {
+    position: absolute;
+    font-size: 2rem;
+    left: 31.5%;
+    top: 25%;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.image {
+    width: 421px;
+    height: 546px;
+
+    position: absolute;
+
+    left: 41.5%;
+    top: -3.5%;
+}
+
+.icon_background {
+    opacity: 0.2;
+    mix-blend-mode: luminosity;
+    position: absolute;
+
+    pointer-events: none;
+}
+
+.button {
+    text-transform: uppercase;
+    width: calc(397px - 40px);
+    text-align: center;
+    border-radius: 16px;
+    background-color: var(--color-deeppink);
+    font-weight: 500;
+    padding: 20px;
+    align-self: center;
+
+    color: white;
+
+    outline: none;
+    border: none;
+
+    font-family: var(--font-unbounded);
+}

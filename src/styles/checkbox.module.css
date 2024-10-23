@@ -1,0 +1,31 @@
+.checkbox_container input {
+    -webkit-appearance: none; /* Hide default checkbox */
+    appearance: none; /* Hide default checkbox */
+    width: 16px;
+    height: 16px;
+    border: 2px solid transparent; 
+    cursor: pointer;
+
+    vertical-align: text-bottom;
+
+    margin: 0;
+    margin-right: 10px;
+
+    padding-left: 12px;
+  
+    /* Linear gradient border */
+    border-image: url("/icons/backgrounds/checkbox_rectage.svg") 2;
+
+   
+}
+
+.checkbox_container input:checked {
+    background: url("/icons/backgrounds/check.svg");
+    
+    /* 
+    background-image: url("/public/background_icons/check_mark.svg");  */
+  }
+
+.checkbox_label {
+    font-size: 10px;
+}

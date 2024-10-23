@@ -1,0 +1,98 @@
+.background {
+    margin-top: 20px;
+    display: flex;
+    padding: 100px;
+
+    font-size: var(--font-size-base);
+    color: var(--color-white);
+    font-family: var(--font-unbounded);
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.header {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    text-transform: uppercase;
+    width: calc(397px - 40px);
+    text-align: center;
+    border-radius: 16px;
+    background-color: var(--color-deeppink);
+    font-weight: 500;
+    padding: 20px;
+    align-self: center;
+
+    color: white;
+
+    outline: none;
+    border: none;
+
+    font-family: var(--font-unbounded);
+
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #FF2990;
+}
+
+.image {
+    max-width: 300px;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.circle {
+    width: 687px;
+    height: 687px;
+    background-color: rgba(168, 52, 156, 0.1);
+    border-radius: 50%;
+    filter: blur(50px);
+    position: absolute;
+    
+    left: 0%;
+    top: 50%;
+    overflow-x: hidden;
+    pointer-events: none;
+}
+
+.circle_2 {
+    width: 800px;
+    height: 800px;
+    background-color: rgba(82, 40, 225, 0.1);
+    border-radius: 50%;
+    filter: blur(50px);
+    position: absolute;
+    
+    left: 45%;
+    top: 20%;
+    overflow-x: hidden;
+    pointer-events: none;
+}
+
+.icon_background {
+    opacity: 0.2;
+    mix-blend-mode: luminosity;
+    position: absolute;
+
+    pointer-events: none;
+}

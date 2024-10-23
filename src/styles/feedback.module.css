@@ -1,0 +1,114 @@
+
+
+.feedback {
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-unbounded);
+  background-color: rgba(31, 28, 58, 76%);
+  border-radius: 24px;
+  width: calc(320px - 50px);
+  height: calc(126px - 50px);
+  backdrop-filter: blur(88px);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  position: relative;
+
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.feedback_show {
+  composes: feedback;
+  opacity: 1;
+}
+
+
+.blur {
+  content: "";
+  opacity: 0.3;
+  position: absolute;
+  width: 80px;
+  height: calc(126px - 50px);
+
+  filter: blur(40px);
+  box-sizing: border-box;
+  left: 205px;
+  top: 30px;
+}
+
+.blur_blue {
+  composes: blur;
+  background-color: var(--color-deepskyblue-100);
+}
+
+.blur_green {
+  composes: blur;
+  background-color: var(--color-lime);
+}
+
+.blur_pink {
+  composes: blur;
+  background-color: var(--color-deeppink);
+}
+
+.infotitle {
+  display: flex;
+  flex-direction: row;
+  justify-content:  space-between;
+  font-family: 'Unbounded_Medium';
+  gap: 15px;
+}
+
+.username {
+  font-weight: 500;
+}
+
+.item {
+  font-size: var(--font-size-3xs);
+  text-transform: uppercase;
+}
+
+.item_green {
+  composes: item; 
+  color: var(--color-lime);
+}
+
+.item_deepskyblue {
+  composes: item;
+  color: var(--color-deepskyblue-100)
+}
+
+.item_deeppink {
+  composes: item;
+  color: var(--color-deeppink);
+}
+
+.item_green {
+  composes: item; 
+  color: var(--color-lime);
+}
+
+
+
+.stars {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+}
+
+.inner {
+  width: 1.25rem;
+  border-radius: var(--br-12xs);
+  height: 1.25rem;
+}
+
+.text {
+  width: 16.75rem;
+  font-size: var(--font-size-xs);
+  color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  font-family: 'Unbounded_Light';
+}
